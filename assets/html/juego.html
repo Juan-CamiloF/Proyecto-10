@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/juego.css">
+    <link rel="icon" href="../img/icono.svg">
+    <title>Juego</title>
+</head>
+<body onload="empiezaElCronometro()">
+    <header class="header">
+        <i class="fas fa-bahai"></i>
+        <nav class="nav">
+            <h2 class="titulos h1">
+                Bienvenid@:
+            </h2>
+            <div class="nombre">
+                <h2 class="titulos" id="perfilNombre">
+                &nbsp;:
+                </h2>
+            </div>
+            <h2>Puntaje: &nbsp; </h2>
+            <h2 class="puntajes" id="puntaje">
+                5
+            </h2>
+            <h2 class="titulos" id="perfilApellido">
+            </h2>
+        </nav>
+        <i class="fas fa-bahai"></i>
+    </header>
+    <main class="contenedor">
+        <section class="instrucciones">
+            <h3>Instrucciones antes de Jugar</h3>
+            <p>1- Tienes las respuestas a las siguiente preguntas siempre que desees</p>
+            <p>2- Con 1 click se bajara la opaciodad al personaje, lo puedes usar para descartarlo</p>
+            <p>3- Si crees saber cual es el personaje y esta con opacidad con otro click puedes seleccionarlo</p>
+            <p>4- Con doble click puedes seleccionar al personaje si no esta con opacidad</p>
+            <p>5- Inicias con 5 puntos si llegas a 0 pierdes el juego</p>
+            <button class="button reiniciar" id="reiniciar">Reiniciar</button>
+        </section>
+        <section>
+            <h1>¿Quién Soy?</h1>
+            <div class="preguntas">
+                <button class="button" id="btnP1">¿Uso casco por su seguridad?</button>
+                <button class="button" id="btnP2">¿Trabaja de acuerdo a lo que dice la ley?</button>
+                <button class="button" id="btnP3">¿Trabaja atendiendo gente?</button>
+                <button class="button" id="btnP4">¿Puede salvar vidas?</button>
+                <button class="button" id="btnP5">¿Viste ropa oscura?</button>
+            </div>
+    </section>
+        <section class="imagenes">
+            <div class="fila" id="fila1">
+            </div>
+            <div class="fila" id="fila2">
+                
+            </div>
+            <div class="fila" id="fila3">
+               
+            </div>
+            <div class="fila" id="fila4">
+               
+            </div>
+        </section>
+        <div class="tiempo" >
+            <p>Tiempo</p>
+            <p>
+                <span id="minutos">0</span>: <span id="segundos">00</span>
+            </p>
+        </div>
+    </main>
+    
+
+    <script src="../scripts/datos.js"></script>
+    <script src="../scripts/img.js"></script>
+    <script src="../scripts/juego.js"></script>
+    <script src="../scripts/preguntas.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://kit.fontawesome.com/1fbd79bdd9.js" crossorigin="anonymous"></script>
+</body>
+</html>
