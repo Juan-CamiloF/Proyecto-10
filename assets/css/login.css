@@ -93,11 +93,19 @@ input{
     }
     .btn {
         background-color: #ffffff;
-        width: 18%;
+        width: 30%;
     }
 }
 @media screen and (max-width:600px){
     input{
-        width:75%;
+        width:80%;
+    }
+    form{
+        width: 80%;
+    }
+}
+@media screen and (max-width:300px){
+    input{
+        width: 90%;
     }
 }
