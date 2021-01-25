@@ -8,7 +8,7 @@ btnP1.addEventListener("click", () => {
   Swal.fire("¿Tiene caso por su seguridad?", `No`, "question");
 });
 btnP2.addEventListener("click", () => {
-  Swal.fire("¿Trabaja de acuerdo a lo que dice la ley?", `Si`, "question");
+  Swal.fire("¿Ayuda a prevenir dolencias?", `Si`, "question");
 });
 btnP3.addEventListener("click", () => {
   Swal.fire("¿Trabaja atendiendo gente?", `Si`, "question");

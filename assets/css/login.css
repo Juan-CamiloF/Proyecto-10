@@ -11,6 +11,17 @@ main {
     margin: auto;
     padding: 25px 0;
 }
+.instrucciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 55px 0;
+    line-height : 25px;
+  }
 
 .form{
     display: flex;

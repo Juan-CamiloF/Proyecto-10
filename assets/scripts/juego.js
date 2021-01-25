@@ -36,7 +36,6 @@ const imgs = document.querySelectorAll(".img");
 //Tachar las imagenes seleccionadas
 for (let i = 0; i < imgs.length; i++) {
   imgs[i].addEventListener("click", tachar);
-  imgs[i].addEventListener("dblclick", puntajeJuego);
 }
 //Funcion para tachar
 function tachar(e) {
@@ -83,6 +82,8 @@ function puntajeJuego(e) {
       }).then((result) => {
         if (result.isConfirmed) {
           location.reload();
+        }else{
+          location.reload();
         }
       });
     } else {
@@ -100,24 +101,11 @@ function puntajeJuego(e) {
 //Funcion de puntos por tiempo
 function puntosPorTiempo() {
   const minutos = document.getElementById("minutos").innerText;
-  const segundos = document.getElementById("segundos").innerText;
-  if (segundos < 30) {
-    return 5;
-  }
-  if (minutos < 1) {
-    return 4;
-  }
-  if (minutos > 1 && minutos < 3) {
-    return 3;
-  }
-  if (minutos > 3 && minutos < 5) {
-    return 2;
-  }
-  if (minutos > 5) {
-    return 1;
-  }
+  if (minutos <= 2) return 5;
+  if (minutos > 2 && minutos <= 4) return 4;
+  if (minutos > 4 && minutos <= 6) return 3;
+  if (minutos > 6 && minutos <= 8) return 2;
+  if (minutos > 8)  return 1;
 }
-
-
 //Reiniciar
 const reiniciar = document.getElementById('reiniciar').addEventListener("click",()=>{location.reload()});
